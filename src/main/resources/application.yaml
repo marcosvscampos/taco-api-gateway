@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: nb-api-gateway
+  data:
+    mongodb:
+      uri: mongodb+srv://roguesoft:rNNFRAmcBMu2gCSz@roguesoft-cluster-dev.as6amuu.mongodb.net/db-taco-api-users-service
+
+server:
+  port: 15080
+
+service:
+  uri:
+    taco-api-foods-service: http://localhost:8100
+    taco-api-users-service: http://localhost:8000
+
